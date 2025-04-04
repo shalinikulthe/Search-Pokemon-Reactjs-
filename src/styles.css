@@ -1,35 +1,34 @@
-/* Ensure the body takes the full height */
 body {
     font-family: Arial, sans-serif;
-    background-color: #a185ad;
+    background-color: #a48bae;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensure full viewport height */
+    min-height: 100vh; 
     margin: 0;
 }
 header h1 {
     font-size: 2rem;
     color: #2c3e50;
     margin-bottom: 20px;
-    text-align: center; /* ✅ Ensures it's centered */
-    width: 100%; /* ✅ Ensures full width to center correctly */
+    text-align: center; 
+    width: 100%; 
 }
-/* Pokémon List (directly on body) */
+
 .cards {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
     gap: 20px;
     padding: 20px;
-    max-width: 900px; /* Fix width */
-    width: 100%; /* Make sure it takes full available width */
-    text-align: center; /* Ensure text inside stays centered */
+    max-width: 900px; 
+    width: 100%; 
+    text-align: center; 
 }
 
-/* Pokémon Card */
+
 .pokemon-cards {
     background: white;
     border-radius: 10px;
@@ -40,12 +39,12 @@ header h1 {
     height: 250px;
 }
 
-/* Hover Effect */
+
 .pokemon-cards:hover {
     transform: scale(1.1);
 }
 
-/* Pokémon Image */
+
 .pokemon-image {
     width: 120px;
     height: 120px;
@@ -55,7 +54,7 @@ header h1 {
 }
 .pokemon-name {
     font-size: 1.2rem;
-    text-transform: capitalize; /* Capitalizes the first letter */
+    text-transform: capitalize; 
     margin-top: 10px;
     color: #2c3e50;
     text-align: center;
@@ -82,7 +81,7 @@ header h1 {
     text-align: center;
     align-items: center; 
     display: flex;
-    justify-content: center; /* centers input horizontally */
+    justify-content: center; 
     
     margin: 20px auto;
 }
