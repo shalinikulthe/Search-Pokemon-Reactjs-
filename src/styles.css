@@ -1,0 +1,88 @@
+/* Ensure the body takes the full height */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a185ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0;
+}
+header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center; /* ✅ Ensures it's centered */
+    width: 100%; /* ✅ Ensures full width to center correctly */
+}
+/* Pokémon List (directly on body) */
+.cards {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px; /* Fix width */
+    width: 100%; /* Make sure it takes full available width */
+    text-align: center; /* Ensure text inside stays centered */
+}
+
+/* Pokémon Card */
+.pokemon-cards {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    height: 250px;
+}
+
+/* Hover Effect */
+.pokemon-cards:hover {
+    transform: scale(1.1);
+}
+
+/* Pokémon Image */
+.pokemon-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.pokemon-name {
+    font-size: 1.2rem;
+    text-transform: capitalize; /* Capitalizes the first letter */
+    margin-top: 10px;
+    color: #2c3e50;
+    text-align: center;
+}
+.pokemon-info {
+    margin-top: 10px;
+    font-size: 14px;
+    background-color: rgb(76, 160, 129);
+    text-align: center;
+    border-radius: 12px;
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.pokemon.search input {
+    width: 50%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    text-align: center;
+    align-items: center; 
+    display: flex;
+    justify-content: center; /* centers input horizontally */
+    
+    margin: 20px auto;
+}
